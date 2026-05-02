@@ -12,7 +12,6 @@ import {
   TextField,
 } from "@heroui/react";
 
-
 import { GrGoogle } from "react-icons/gr";
 
 export default function SignInPage() {
@@ -21,33 +20,31 @@ export default function SignInPage() {
     const email = e.target.email.value;
     const password = e.target.password.value;
 
-    const {data, error} = await authClient.signIn.email({
-        email,
-        password,
-callbackURL:'/'
-    })
-    
+    const { data, error } = await authClient.signIn.email({
+      email,
+      password,
+      callbackURL: "/",
+    });
 
-    console.log({data, error})
+    console.log({ data, error });
 
     // if(!error) {
     //     router.push('/')
     // }
   };
 
-  const handlGoogleSignIn=async()=>{
-  const data = await authClient.signIn.social({
-    provider: "google",
-  });
-  }
+  const handlGoogleSignIn = async () => {
+    const data = await authClient.signIn.social({
+      provider: "google",
+    });
+  };
 
   return (
-    <Card className="border mx-auto w-125 py-10 mt-5">
+    <div className=" px-4">
+      <Card className="border mx-auto sm:w-125 py-10 mt-5">
       <h1 className="text-center text-2xl font-bold">Sign IN</h1>
 
       <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
-     
-
         <TextField
           isRequired
           name="email"
@@ -102,9 +99,16 @@ callbackURL:'/'
           </Button>
         </div>
         <div>
-          <Button onClick={handlGoogleSignIn} variant="outline" className={'w-full'}><GrGoogle/> Sign In With Google</Button>
+          <Button
+            onClick={handlGoogleSignIn}
+            variant="outline"
+            className={"w-full"}
+          >
+            <GrGoogle /> Sign In With Google
+          </Button>
         </div>
       </Form>
     </Card>
+    </div>
   );
 }

@@ -3,9 +3,9 @@ import { Button } from "@heroui/react";
 import Link from "next/link";
 
 const Category = async () => {
-  const categories = await getCategory()
+  const categories = await getCategory();
   return (
-    <div className="mb-5 space-x-3">
+    <div className="mb-5 space-x-2 flex gap-2 flex-wrap">
       {categories.map((category) => (
         <Link
           key={category.id}
