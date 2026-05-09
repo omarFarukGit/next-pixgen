@@ -1,36 +1,183 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🤖Pixgen AI Generated Website
 
-## Getting Started
+একটি আধুনিক AI Powered Website যেখানে Artificial Intelligence ব্যবহার করে বিভিন্ন smart features তৈরি করা হয়েছে। এই project টি modern web technologies ব্যবহার করে build করা হয়েছে।
 
-First, run the development server:
+---
+
+# 🚀 Features
+
+* AI Generated Content
+* User Friendly Interface
+* Responsive Design
+* Fast Performance
+* Authentication System
+* Dynamic Data Rendering
+* API Integration
+* Real-time Response
+* Search Functionality
+* Mobile Friendly UI
+
+---
+
+# 🛠️ Technology Stack
+
+## Frontend
+
+* React.js
+* Next.js
+* Tailwind CSS
+* Axios
+* TypeScript / JavaScript
+
+## Backend
+
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* JWT Authentication
+
+## AI Tools / APIs
+
+* OpenAI API
+* Gemini API
+* AI Text Generation
+* AI Image Generation
+
+---
+
+# 📂 Project Structure
+
+```bash
+
+```
+
+---
+
+# ⚙️ Installation
+
+## 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+```
+
+---
+
+## 2️⃣ Go To Project Folder
+
+```bash
+cd your-repo-name
+```
+
+---
+
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+## Create .env File
+
+```env
+PORT=5000
+MONGODB_URI=your_mongodb_uri
+JWT_SECRET=your_secret_key
+OPENAI_API_KEY=your_api_key
+```
+
+## Run 
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+# 💻 Frontend Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Install Dependencies
 
-## Learn More
+```bash
+cd client
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# 🌐 Main Pages
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* Home Page
+* AI Generator Page
+* Login Page
+* Register Page
+* Dashboard
+* User Profile
+* History Page
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# 🔄 API Endpoints
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Auth Routes
+
+```bash
+POST /api/auth/register
+POST /api/auth/login
+```
+
+## AI Routes
+
+```bash
+POST /api/ai/generate
+GET /api/ai/history
+```
+
+---
+
+# 🧠 Learning Goals
+
+এই project এর মাধ্যমে যা শিখেছি:
+
+* AI API Integration
+* Next Development
+* Better-Auth Authentication & Authorization
+* Modern UI Design
+
+---
+
+# ☁️ Deployment
+* Vercel
+## Database
+
+* MongoDB Atlas
+
+---
+
+# 📌 Future Improvements
+
+* Voice AI Feature
+* AI Chat System
+* Dark Mode
+* Multi-language Support
+* AI Image Generation
+* Payment Integration
+
+---
+
+# 🤝 Contributing
+
+Pull requests are welcome. For major changes, please open an issue first.
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+# 👨‍💻 Developer
+
+Developed by Md Omar Faruk
